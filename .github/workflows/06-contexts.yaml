@@ -23,7 +23,7 @@ jobs:
           echo "Workflow: ${{ github.workflow }}"
           echo "Run ID: ${{ github.run_id }}"
           echo "Run number: ${{ github.run_number }}"
-          echo "GITHUB.ACTOR"
+          echo GITHUB.ACTOR
 
       - name: Retrieve Variable
         run: |
