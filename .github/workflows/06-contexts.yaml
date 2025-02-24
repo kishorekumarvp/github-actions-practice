@@ -45,11 +45,11 @@ jobs:
         env:
           MY_OVERWRITTEN_VAR: step
         run: |
-          echo "Workflow env: ${{ vars.MY_WORKFLOW_VAR}}"
+          echo "Workflow env: ${{ vars.MY_WORKFLOW_VAR }}"
           echo "Overwritten env: ${{ vars.MY_OVERWRITTEN_VAR }}"
 
       - name: 2nd Print Env Variables
         run: |
-          echo "Workflow env: ${{ vars.MY_WORKFLOW_VAR}}"
+          echo "Workflow env: ${{ vars.MY_WORKFLOW_VAR }}"
           echo "Overwritten env: ${{ vars.MY_OVERWRITTEN_VAR }}"
  
