@@ -20,4 +20,8 @@ jobs:
           echo "Branch: ${{ github.ref }}"
           echo "Commit SHA: $GITHUB_SHA"
           echo "Runner OS: ${{ runner.os }}"
-
+      
+      - name: debug Print when triggered from master
+        if: inputs.debug == true && github.ref_name == "master"
+        run: |
+          echo "I was triggered from master"
