@@ -25,3 +25,6 @@ jobs:
         if: inputs.debug && github.ref == 'ref/heads/master'
         run: |
           echo "I was triggered from master"
+      
+      - name: Default Step
+        run: echo "I run whatever the condition maybe"
