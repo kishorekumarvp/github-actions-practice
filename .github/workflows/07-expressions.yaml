@@ -27,4 +27,7 @@ jobs:
           echo "I was triggered from master"
       
       - name: Default Step
-        run: echo "I run whatever the condition maybe"
+        run: |
+          echo "I run whatever the condition maybe"
+          echo "${{ github.ref }}"
+          echo "${{ github.ref_name }}"
