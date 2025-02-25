@@ -22,9 +22,12 @@ jobs:
           echo "Runner OS: ${{ runner.os }}"
       
       - name: '[debug] Print when triggered from master'
-        if: inputs.debug && github.ref == 'ref/heads/master'
+        if: inputs.debug && github.ref == 'refs/heads/master'
         run: |
           echo "I was triggered from master"
       
       - name: Default Step
-        run: echo "I run whatever the condition maybe"
+        run: |
+          echo "I run whatever the condition maybe"
+          echo "${{ github.ref }}"
+          echo "${{ github.ref_name }}"
