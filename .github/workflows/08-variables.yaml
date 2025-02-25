@@ -1,4 +1,4 @@
-name: 08-variables
+name: 08 - Variables
 
 on:
   push:
@@ -30,5 +30,4 @@ jobs:
       - name: Overwrite Job Variable
         env:
           OVERWRITTEN: 'I have been overwritten at the step level'
-        run: 
-          echo "Step env var: $OVERWRITTEN"
+        run: echo "Step env var: $OVERWRITTEN"
