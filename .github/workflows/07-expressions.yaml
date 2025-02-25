@@ -22,7 +22,7 @@ jobs:
           echo "Runner OS: ${{ runner.os }}"
       
       - name: '[debug] Print when triggered from master'
-        if: inputs.debug && github.ref == 'ref/heads/master'
+        if: inputs.debug && github.ref == 'refs/heads/master'
         run: |
           echo "I was triggered from master"
       
